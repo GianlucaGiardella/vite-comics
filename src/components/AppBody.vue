@@ -2,13 +2,17 @@
 
 <template>
     <main>
-        <div class="container">Coming soon...</div>
+        <div class="container-bg">
+            <div class="container">
+                Coming soon...
+            </div>
+        </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
-main {
-    background-color: black;
+.container-bg {
+    background-color: #1C1C1C;
 }
 
 .container {
