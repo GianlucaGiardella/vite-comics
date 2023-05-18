@@ -54,7 +54,7 @@ header {
         height: 88px;
         grid-column: 7 / 17;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         list-style-type: none;
     }
