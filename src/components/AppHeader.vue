@@ -23,10 +23,6 @@
 </template>
 
 <style lang="scss" scoped>
-header {
-    font-family: sans-serif;
-}
-
 .container {
     width: 960px;
     max-width: 1280px;
@@ -56,7 +52,6 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        list-style-type: none;
     }
 
     .nav {
