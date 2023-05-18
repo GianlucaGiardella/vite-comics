@@ -79,7 +79,17 @@
     </div>
     <div class="bottom-footer-bg">
       <div class="container">
-        <div class="bottom-footer"></div>
+        <div class="bottom-footer">
+          <button class="sign-up">sign-up now!</button>
+          <ul class="socials">
+            <li><h2>follow us</h2></li>
+            <li><img src="./../assets/img/footer-facebook.png" alt="" /></li>
+            <li><img src="./../assets/img/footer-twitter.png" alt="" /></li>
+            <li><img src="./../assets/img/footer-youtube.png" alt="" /></li>
+            <li><img src="./../assets/img/footer-pinterest.png" alt="" /></li>
+            <li><img src="./../assets/img/footer-periscope.png" alt="" /></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
@@ -92,6 +102,10 @@
 
 .middle-footer-bg {
   background-image: url("./../assets/img/footer-bg.jpg");
+}
+
+.bottom-footer-bg {
+  background-color: #303030;
 }
 
 .container {
@@ -141,7 +155,7 @@
 
 .middle-footer {
   .lists {
-    padding: 2rem 0 3rem;
+    padding: 2rem 0;
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -182,10 +196,50 @@
   }
 
   img {
-    grid-column: 5 / 10;
+    grid-column: 6 / 10;
     display: block;
-    height: 150%;
+    height: 121%;
     align-self: center;
+  }
+}
+
+.bottom-footer {
+  height: 82px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.bottom-footer {
+  .sign-up {
+    grid-column: 1 / 2;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: unset;
+    border: unset;
+    border: 1px solid #0c7af3;
+  }
+
+  .socials {
+    grid-column: 7 / 10;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #0c7af3;
+  }
+
+  li > img {
+    display: block;
+    width: 25px;
+    aspect-ratio: 1 / 1;
   }
 }
 </style>
