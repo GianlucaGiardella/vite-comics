@@ -67,10 +67,10 @@
             <ul class="sites">
               <li><h2>sites</h2></li>
               <li>DC</li>
-              <li>MAD Magazines</li>
+              <li>MAD Magazine</li>
               <li>DC Kids</li>
               <li>DC Universe</li>
-              <li>DC Power Visas</li>
+              <li>DC Power Visa</li>
             </ul>
           </div>
           <img src="./../assets/img/dc-logo-bg.png" alt="" />
@@ -115,7 +115,7 @@
 }
 
 .top-footer {
-  height: 150px;
+  height: 120px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   color: white;
@@ -123,17 +123,18 @@
 
 .top-footer {
   section {
-    padding: 0.6rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    gap: 0.3rem;
   }
+
   section {
     img {
       display: block;
-      height: 38px;
-      width: 38px;
+      height: 40px;
+      aspect-ratio: 1 / 1;
       object-fit: contain;
     }
 
@@ -173,7 +174,7 @@
 
     li {
       line-height: 1.1rem;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
 
     .comics {
