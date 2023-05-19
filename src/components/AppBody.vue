@@ -19,7 +19,7 @@ export default {
       <div class="container">
         <div class="current-series">
           <h2>current series</h2>
-          <ul>
+          <ul class="series-list">
             <SeriesCard
               v-for="card in SeriesArr"
               :seriesImage="card.thumb"
@@ -27,6 +27,7 @@ export default {
               :key="card.series"
             />
           </ul>
+          <button class="more">load more</button>
         </div>
       </div>
     </div>
@@ -38,20 +39,59 @@ export default {
   background-color: #1c1c1c;
 }
 
-.container {
-  width: 960px;
-  max-width: 1280px;
-  height: 100px;
-  margin: 0 auto;
+.jumbotron {
+  height: 400px;
+  width: 100%;
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
 }
 
 .container {
-  div {
-    height: 100%;
+  width: 960px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.current-series {
+  width: 100%;
+  padding: 2.5rem 0 1rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.current-series {
+  h2 {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    background-color: #0282f9;
+  }
+  .series-list {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
     display: grid;
-    align-content: center;
-    font-size: 2.5rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .more {
+    padding: 0.5rem 2.5rem;
+    font-weight: 600;
     color: white;
+    text-transform: uppercase;
+    border: unset;
+    background-color: #0282f9;
+  }
+
+  .more:hover {
+    cursor: pointer;
   }
 }
 </style>
