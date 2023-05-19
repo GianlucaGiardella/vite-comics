@@ -1,12 +1,33 @@
 <script>
-export default {};
+import SeriesArrJson from "../assets/json/dc-comics.json";
+import SeriesCard from "./Card.vue";
+
+export default {
+  data() {
+    return {
+      SeriesArr: SeriesArrJson,
+    };
+  },
+  components: { SeriesCard },
+};
 </script>
 
 <template>
   <main>
     <div class="container-bg">
+      <div class="jumbotron"></div>
       <div class="container">
-        <div>Coming soon...</div>
+        <div class="current-series">
+          <h2>current series</h2>
+          <ul>
+            <SeriesCard
+              v-for="card in SeriesArr"
+              :seriesImage="card.thumb"
+              :seriesTitle="card.series"
+              :key="card.series"
+            />
+          </ul>
+        </div>
       </div>
     </div>
   </main>
