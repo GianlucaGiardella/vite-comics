@@ -5,15 +5,15 @@
 
 # 2.0 Header
 
-- Scheletro HTML header
-- stile header
+- Struttura HTML
+- Stile CSS (SCSS)
 
 # 3.0 Body
 
-- Scheletro HTML body
-- Stile body
+- Struttura HTML
+- Stile CSS (SCSS)
 
 # 4.0 Footer
 
-- Scheletro HTML footer
-- Stile footer
+- Struttura HTML
+- Stile CSS (SCSS)
