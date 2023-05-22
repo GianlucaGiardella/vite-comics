@@ -15,7 +15,7 @@ export default {
   </li>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 li {
   padding-inline: 0.7rem;
   display: flex;
